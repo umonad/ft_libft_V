@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 22:24:29 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/08 13:58:20 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/08 15:41:17 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 
 
 
-int     ft_isalpha(char a);
+int     ft_isdigit(int a);
+int     ft_isalnum(int a);
+int     ft_isalpha(int a);
 #endif
 

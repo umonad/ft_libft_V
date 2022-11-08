@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-int ft_isalpha(char a)
+/// @brief 
+/// @param a 
+/// @return 
+int ft_isalpha(int a)
 {
     if ((a <= 'z' && a >= 'a') || (a <= 'Z' && a >= 'A'))
     {
