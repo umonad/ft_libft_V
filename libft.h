@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 22:24:29 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/07 22:31:36 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/08 13:58:20 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <stdlib.h> 
 
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
+
+int     ft_isalpha(char a);
 #endif
 
