@@ -6,7 +6,7 @@
 #    By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/07 15:45:20 by mudoh             #+#    #+#              #
-#    Updated: 2022/11/08 15:42:24 by mudoh            ###   ########.fr        #
+#    Updated: 2022/11/09 12:02:08 by mudoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CFLAGS = -Wall -Werror -Wextra
 
 NAME = libft.a
 
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_strlcpy.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -24,10 +24,9 @@ AR = ar rcs
 RM = rm -fr
 
 all: $(NAME)
-	@echo "bhbbuyb"
-
+	@echo "ca marche"
 $(NAME) : $(OBJS)
-	$(AR) $(NAME) $(OBJS)
+	 $(AR) $(NAME) $(OBJS)
 
 clean:
 	
