@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 22:24:29 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/09 12:04:15 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/10 15:41:51 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int     ft_isdigit(int a);
 int     ft_isalnum(int a);
 int     ft_isalpha(int a);
 int     ft_strlcpy(char *str, char *dst, size_t t);
+int     ft_strlcat(char *dst, char*src, size_t limit);
 #endif
 

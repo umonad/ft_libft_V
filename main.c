@@ -9,9 +9,15 @@ int main()
     char dst[] = "hulkklk";
 
     printf("%s\n", dst);
-    ft_strlcpy(dst, src, 2);
+    ft_strlcpy(dst, src, 5);
     printf("%s\n", dst);
-    printf("%d\n", ft_strlcpy(dst, src, 2));
+    printf("%d\n", ft_strlcpy(dst, src, 5));
+
+    printf("%s\n", dst);
+    ft_strlcat(dst, src, 12);
+    printf("%s\n", dst);
+    printf("%d\n", ft_strlcat(dst, src, 12));
+
     if (ft_isdigit(a)==0)
         printf("Character is number\n");
     if (ft_isalpha(a)== 0)
