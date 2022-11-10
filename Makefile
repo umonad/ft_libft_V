@@ -6,11 +6,19 @@
 #    By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 19:10:07 by mudoh             #+#    #+#              #
-#    Updated: 2022/11/10 19:52:25 by mudoh            ###   ########.fr        #
+#    Updated: 2022/11/10 19:57:07 by mudoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = ft_strlen.c
+SRCS = ft_strlen.c \
+		ft_strlcpy.c\
+		ft_strlcat.c\
+		ft_isprint.c\
+		ft_isalnum.c\
+		ft_isalpha.c\
+		ft_isascii.c\
+		ft_isdigit.c\
+		
 
 FLAGS = -Wall -Wextra -Werror
 CC = gcc
