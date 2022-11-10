@@ -3,18 +3,18 @@
 int main()
 {
     int a = '2';
-    char *str = "absde";
+    char str[] = "absde";
 
     char src[] = "tesuhu";
-    char dst[] = "hulkklk";
-
+    char *dst = NULL;
+    dst = malloc(sizeof(char) * 10);
+    if (dst == NULL)
+        return(0);
     printf("%s\n", dst);
     ft_strlcpy(dst, src, 5);
     printf("%s\n", dst);
     printf("%d\n", ft_strlcpy(dst, src, 5));
 
-    printf("%s\n", dst);
-    ft_strlcat(dst, src, 12);
     printf("%s\n", dst);
     printf("%d\n", ft_strlcat(dst, src, 12));
 
