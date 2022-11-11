@@ -6,7 +6,7 @@
 #    By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 19:10:07 by mudoh             #+#    #+#              #
-#    Updated: 2022/11/10 23:24:04 by mudoh            ###   ########.fr        #
+#    Updated: 2022/11/11 18:04:58 by mudoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRCS = ft_strlen.c \
 		ft_isdigit.c \
 		ft_memset.c \
 		ft_memcpy.c \
+		ft_memmove.c \
 		#ft_bzero.c
 		
 		

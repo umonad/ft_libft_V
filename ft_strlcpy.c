@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 11:42:09 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/09 13:35:10 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/11 22:36:34 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,23 @@
 
 int ft_strlcpy(char *dst, const char *src, size_t size)
 {
-    int i = 0;
-    int len = 0;
-    
+    int i;
+    int len;
+
+    i = 0;
+    len = 0;
     while(src[len])
         len++;
     
     if (size > 0)
-        {
+    {
         while (src[i] && size -1 > 0)
-            {
-                dst[i] = src[i];
-                i++;
-                size--;
-            }
-        dst[i] = '\0';
+        {
+            dst[i] = src[i];
+            i++;
+            size--;
         }
-    dst[i] = '\0';
+        dst[i] = '\0';
+    }
     return(len);
 }

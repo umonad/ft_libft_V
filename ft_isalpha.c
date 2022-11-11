@@ -3,7 +3,7 @@
 /// @brief 
 /// @param a 
 /// @return 
-int ft_isalpha(int a)
+/*int ft_isalpha(int a)
 {
     if ((a <= 'z' && a >= 'a') || (a <= 'Z' && a >= 'A'))
     {
@@ -13,4 +13,9 @@ int ft_isalpha(int a)
     {
         return(1);
     }
+}*/
+
+int ft_isalpha(int a)
+{
+    return (a <= 'z' && a >= 'a') || (a <= 'Z' && a >= 'A');
 }

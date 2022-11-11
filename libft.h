@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 22:24:29 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/10 21:17:30 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/11 18:18:36 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ int     ft_strlcpy(char *str, char *dst, size_t t);
 int     ft_strlcat(char *dst, char*src, size_t limit);
 void    bzero(void *s, size_t n);
 void    *memset(void *str, int c, size_t n);
+void    *ft_memmove(void *dest, const void *src, size_t n);
+void    *ft_memcpy(void *dest, const void *src, size_t n);
 #endif
 
