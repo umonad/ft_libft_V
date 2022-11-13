@@ -6,14 +6,13 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 21:02:48 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/10 23:22:14 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/14 00:25:38 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-void *ft_bzero(void *s, size_t n)
+void ft_bzero(void *s, size_t n)
 {
-    return(ft_memset(s, 0, n));
+    ft_memset(s, 0, n);
 }

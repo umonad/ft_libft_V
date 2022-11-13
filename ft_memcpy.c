@@ -6,26 +6,33 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 22:49:14 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/11 20:07:41 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/13 21:44:33 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void *memcpy(void *dest, const void *src, size_t n)
+void *ft_memcpy(void *dest, const void *src, size_t n)
 
 {
     unsigned char *d;
     unsigned char *s;
-    size_t i = 0;
+    long unsigned int i;
     
-    while(n > 0 && s[i] != '\0')
+    i = 0;
+
+    d = (unsigned char*)dest;
+    s = (unsigned char*)src;
+    
+    if(!dest && !src)
     {
-        d = (unsigned char*)dest;
-        s = (unsigned char*)src;
-        d[i] = s[i];
-        i++;
-        n--;
+        return (NULL);
     }
-    return(dest);
+        while(n > 0)
+        {
+            d[i] = s[i];
+            i++;
+            n--;
+        }
+    return(d);
 }
