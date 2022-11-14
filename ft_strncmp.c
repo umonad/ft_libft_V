@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 13:49:21 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/13 19:01:04 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/14 18:57:54 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,12 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     
     if(n == 0)
         return(0);
-    while(n > 0 && s1[i] == s2[i] && s1[n] != '\0' && s2[n] != '\0')
+    while(n > 0)
+    {
+        if(s1[i] != s2[i])
+            return(s1[i] - s2[i]);
+        i++;
         n--;
-    return(s1[n] - s2[n]);
+    }
+    return(0);
 }

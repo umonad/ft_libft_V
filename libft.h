@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 22:24:29 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/14 00:22:56 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/14 20:36:22 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h> 
+#include <stddef.h>
 
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
