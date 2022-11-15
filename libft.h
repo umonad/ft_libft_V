@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 22:24:29 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/14 20:36:22 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/15 19:59:49 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,9 @@ char *ft_strrchr(const char *s, int c);
 int ft_strncmp(const char *s1, const char *s2, size_t n);
 char *ft_strnstr(const char *s1, const char *s2, size_t n);
 size_t    ft_strlcpy(char *dst, const char *src, size_t n);
-size_t    ft_strlcat(char *dst, const char *src, size_t n);
+size_t	ft_strlcat(char *dst, const char *src, size_t n);
 char *ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strdup(const char *s);
+void *ft_calloc(size_t nmemb, size_t size);
 #endif
 

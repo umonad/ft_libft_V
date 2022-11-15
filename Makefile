@@ -6,7 +6,7 @@
 #    By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 19:10:07 by mudoh             #+#    #+#              #
-#    Updated: 2022/11/14 00:22:14 by mudoh            ###   ########.fr        #
+#    Updated: 2022/11/15 19:42:55 by mudoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,8 @@ SRCS = ft_strlen.c \
         ft_strrchr.c \
         ft_tolower.c \
     	ft_toupper.c \
+        ft_strdup.c \
+		ft_calloc.c \
 		
 		
 		
