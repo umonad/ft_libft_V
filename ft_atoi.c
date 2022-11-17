@@ -12,16 +12,18 @@ int ft_atoi(const char *nptr)
 
     while((nptr[i] <= 13 && nptr[i] >= 9) || nptr[i] == 32)
         i++;
-    if(nptr[i] == '-' || nptr[i] == '+')
-    {
-        if(nptr[i] == '-')
-            sign *= -1;
-        i++;
-    }
-        i++;
+    if (nptr[i+1] == '-' || nptr[i+1] == '+')
+		return (0);
+	else if (nptr[i] == '-')
+	{
+		sign *= -1;
+		i++;
+	}
+	else if (nptr[i] == '+')
+		i++;
     while(nptr[i] >= '0' && nptr[i] <= '9')
     {
-        num = num * 10 + (nptr[i] - '0');
+        num = (num * 10) + (nptr[i] - '0');
         i++;
     }
     return(num * sign);

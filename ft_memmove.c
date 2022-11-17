@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 17:25:34 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/13 21:47:04 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/17 15:34:19 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
     {
         return (NULL);
     }
-        while(n > 0)
+	    while(n > 0)
         {
             if(d < s)
             {
