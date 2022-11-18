@@ -6,7 +6,7 @@
 #    By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 19:10:07 by mudoh             #+#    #+#              #
-#    Updated: 2022/11/17 16:11:31 by mudoh            ###   ########.fr        #
+#    Updated: 2022/11/19 00:34:03 by mudoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,8 @@ SRCS = 	ft_strlen.c \
 		ft_substr.c \
 		ft_strjoin.c \
 		ft_split.c \
+		ft_strtrim.c \
+		ft_strmapi.c
 
 FLAGS = -Wall -Wextra -Werror
 CC = gcc

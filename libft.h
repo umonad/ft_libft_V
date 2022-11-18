@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 22:24:29 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/17 16:02:26 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/19 00:33:42 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,7 @@ void *ft_calloc(size_t nmemb, size_t size);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const *s, char c);
+char	*ft_strtrim(const char *s1, const char *set);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 #endif
 

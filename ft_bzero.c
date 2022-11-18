@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 21:02:48 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/14 00:25:38 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/18 21:18:44 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,13 @@
 
 void ft_bzero(void *s, size_t n)
 {
-    ft_memset(s, 0, n);
+    unsigned char *strtmp;
+    strtmp = (unsigned char *) s;
+
+    while(n > 0)
+    {
+        *strtmp = '\0';
+        strtmp++;
+        n--;
+    }
 }
