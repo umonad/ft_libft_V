@@ -6,7 +6,7 @@
 #    By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 19:10:07 by mudoh             #+#    #+#              #
-#    Updated: 2022/11/19 02:17:56 by mudoh            ###   ########.fr        #
+#    Updated: 2022/11/19 22:06:49 by mudoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,8 @@ SRCS = 	ft_strlen.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
+		ft_itoa.c \
+		ft_putnbr_fd.c \
 
 FLAGS = -Wall -Wextra -Werror
 CC = gcc
