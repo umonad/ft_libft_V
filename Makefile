@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = 	ft_strlen.c \
+SRC = 	ft_strlen.c \
         ft_strlcpy.c \
         ft_strlcat.c \
         ft_isprint.c \
@@ -48,7 +48,7 @@ SRCS = 	ft_strlen.c \
 FLAGS = -Wall -Wextra -Werror
 CC = gcc
 
-OBJS = $(SRCS:.c=.o)
+OBJ = $(SRC:.c=.o)
 
 HEAD = ./includes/
 
@@ -59,24 +59,23 @@ RM = rm -f
 NAME = libft.a
 
 .c.o:
-	$(CC) $(FLAGS) -c -I $(HEAD) $< -o $(<:.c=.o)
+	$(CC) $(CFLAGS) -c -I $(HEAD) $< -o $(<:.c=.o)
 
 all: $(NAME)
 	@echo "success"
 	
-$(NAME) : $(OBJS)
-	$(AR) $(NAME) $(OBJS)
+$(NAME) : $(OBJ)
+	$(AR) $(NAME) $(OBJ)
 
 clean:
 	
-	$(RM) $(OBJS)
+	$(RM) $(OBJ)
 	clear
 
 fclean:
 
-	$(RM) $(NAME) $(OBJS)
+	$(RM) $(NAME) $(OBJ)
 	clear
 	
 re : fclean all
-
 .PHONY : clean fclean all

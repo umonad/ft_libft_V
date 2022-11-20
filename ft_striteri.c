@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 01:03:23 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/19 01:20:21 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/20 16:30:22 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,10 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned i;
 	
 	i  = 0;
-	
-	while(s[i])
-	{
-		f(i, &s[i]);
-		i++;
-	}
-	
+	if(s)
+		while(s[i])
+		{
+			f(i, &s[i]);
+			i++;
+		}
 }

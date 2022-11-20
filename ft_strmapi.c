@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 00:25:52 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/19 01:15:31 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/20 16:27:58 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i= 0;
 	char *str;
 	
+	if(s == 0)
+		return(NULL);
 	str = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if(!str)
 		return(NULL);

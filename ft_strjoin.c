@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 14:28:54 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/18 23:17:02 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/11/20 16:26:31 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char *ft_strjoin(char const *s1, char const *s2)
 	
     i = 0;
     
+	if(s1 == 0 || s2 == 0)
+		return(NULL);
 	str = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
     if (!str || !s1 || !s2)
         return (NULL);
