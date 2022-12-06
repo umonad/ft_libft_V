@@ -6,17 +6,17 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:04:10 by mudoh             #+#    #+#             */
-/*   Updated: 2022/12/06 13:28:05 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/06 13:56:39 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*pointer;
-	
-	if((long int)nmemb < 0 || (long int)size < 0)
+
+	if ((long int)nmemb < 0 || (long int)size < 0)
 		return(0);
 	pointer = malloc(nmemb * size);
 	if (!pointer)

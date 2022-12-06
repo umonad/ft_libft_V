@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 19:58:45 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/20 17:02:30 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/06 14:19:52 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,11 @@ void *ft_memset(void *str, int c, size_t n)
     int i;
 
 	i = 0;
-    if(n == 0)
-        return(NULL);
     while(n > 0)
     {
         strtmp[i] = c;
         i++;
         n--;
     }
-    return((void *) strtmp);
+    return(strtmp);
 }
