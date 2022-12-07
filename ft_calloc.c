@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:04:10 by mudoh             #+#    #+#             */
-/*   Updated: 2022/12/06 13:56:39 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/07 16:26:21 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*pointer;
 
-	if ((long int)nmemb < 0 || (long int)size < 0)
-		return(0);
+	if (size > 0 && nmemb > SIZE_MAX / size)
+		return (NULL);
 	pointer = malloc(nmemb * size);
 	if (!pointer)
-		return(0);
+		return (NULL);
 	ft_bzero(pointer, nmemb * size);
-	return(pointer);
+	return (pointer);
 }

@@ -6,19 +6,19 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 13:39:09 by mudoh             #+#    #+#             */
-/*   Updated: 2022/12/06 13:39:10 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/07 13:53:03 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_isdigit(int b)
+int	ft_isdigit(int b)
 
 {
-    if (b <= '9' && b >= '0')
-    {
-        return(1);
-    }
-    else
-	    return(0);
+	if (b <= '9' && b >= '0')
+	{
+		return (1);
+	}
+	else
+		return (0);
 }

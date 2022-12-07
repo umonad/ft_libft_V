@@ -6,20 +6,20 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 13:39:05 by mudoh             #+#    #+#             */
-/*   Updated: 2022/12/06 13:39:05 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/07 13:52:51 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_isascii(int a)
+int	ft_isascii(int a)
 {
-    if ((a <= 127 && a >= 0))
-    {
-        return(1);
-    }
-    else
-    {
-        return(0);
-    }
+	if ((a <= 127 && a >= 0))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

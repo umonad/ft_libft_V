@@ -6,17 +6,18 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 16:28:17 by mudoh             #+#    #+#             */
-/*   Updated: 2022/11/17 16:28:44 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/07 14:51:47 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
-    int i = 0;
+	int	i;
 
-    while(str[i])
-        i++;
-    return(i);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

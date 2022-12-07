@@ -6,20 +6,20 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 13:39:13 by mudoh             #+#    #+#             */
-/*   Updated: 2022/12/06 13:39:14 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/07 14:28:39 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_isprint(int a)
+int	ft_isprint(int a)
 {
-    if ((a <127 && a > 31)) 
-    {
-        return(1);
-    }
-    else
-    {
-        return(0);
-    }
+	if ((a < 127 && a > 31))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

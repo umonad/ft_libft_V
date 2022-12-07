@@ -6,7 +6,7 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 13:38:51 by mudoh             #+#    #+#             */
-/*   Updated: 2022/12/06 13:59:56 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/07 13:51:16 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_atoi(const char	*nptr)
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if(nptr[i] == '-')
+		if (nptr[i] == '-')
 			sign *= -1;
 		i++;
 	}
@@ -34,6 +34,5 @@ int	ft_atoi(const char	*nptr)
 		num = (num * 10) + (nptr[i] - '0');
 		i++;
 	}
-	return(num * sign);
+	return (num * sign);
 }
-

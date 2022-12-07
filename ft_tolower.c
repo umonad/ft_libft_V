@@ -6,16 +6,15 @@
 /*   By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 13:40:51 by mudoh             #+#    #+#             */
-/*   Updated: 2022/12/06 13:40:52 by mudoh            ###   ########.fr       */
+/*   Updated: 2022/12/07 14:38:35 by mudoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    
-    if(c >= 65 && c <= 90)
-        c = c + 32;
-    return(c);
+	if (c >= 65 && c <= 90)
+		c = c + 32;
+	return (c);
 }
