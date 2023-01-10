@@ -6,7 +6,7 @@
 #    By: mudoh <mudoh@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 19:10:07 by mudoh             #+#    #+#              #
-#    Updated: 2022/12/07 19:05:10 by mudoh            ###   ########.fr        #
+#    Updated: 2022/12/07 19:15:28 by mudoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,7 @@ SRC = 	ft_strlen.c \
 
 CFLAGS = -Wall -Wextra -Werror
 
-CC = gcc
+CC = cc
 
 OBJ = $(SRC:.c=.o)
 
@@ -71,12 +71,10 @@ $(NAME) : $(OBJ)
 clean:
 	
 	$(RM) $(OBJ)
-	clear
 
 fclean:
 	$(RM) $(NAME) $(OBJ)
-	clear
 	
 re : fclean all
 
-.PHONY : clean fclean all
+.PHONY : clean fclean all re
